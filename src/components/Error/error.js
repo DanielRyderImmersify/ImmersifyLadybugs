@@ -1,14 +1,10 @@
 import React from "react";
 import "../CSS/style.css";
 import "../CSS/fonts.css";
-import errorImage from "../images/404.svg";
 
 export const ErrorPage = () => {
     return (
         <section className="error_block">
-            <div className="error_img">
-                <img src={errorImage} className="img-fluid" alt="404 - Error" />
-            </div>
 
             <div className="error_txt">
                 <h3>OOPS!</h3>

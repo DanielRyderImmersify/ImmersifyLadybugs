@@ -18,7 +18,7 @@
 
 ## NodeJS/Express
 
-There is a simple node backend that uses express to route to the React client.
+There is a simple node server ('app.js') that uses express to route to the React client.
 
 For simplicity all of the data in this application is stored locally within the '/node/data' folder.
 
@@ -33,8 +33,38 @@ In '/src/components/Landing/Landing.js' the 'GetLadybugs' function is called and
 -   the first is a function to handle the ladybugs json (which has been parsed by 'GetLadybugs')
 -   the second is an error handling function
 
+The images specified by 'imageLocation' can be found in 'src/images'
+
 A good starting point would be to put this data into individual arrays (name, imageLocation and description)
+
+Using functional React (hooks) is preffered although you should complete the task however you feel most comfortable
 
 # Your Task
 
+This task does have a rough guideline of what to create but the way in which you do that is completely up to you.
+
+However you prefer to plan and execute this task is accepted, just make sure that you are able to communicate your process, and reasoning for the decisions you made.
+
 ## Create a simple web app that displays information about ladybugs
+
+Using the information supplied to you in the ladybugs JSON create a web app that has the following functionality
+
+-   A landing page that shows all of the ladbugs names and images (can be formatted however you choose)
+
+-   Each ladybug can be clicked on to show all of the information in it's own page (prefferably without a page reload. _hint_ use hooks and components)
+
+## Additional Tasks (optional)
+
+It is not necessarily expected for you to complete these tasks, perhaps just pick the one which interests you the most if you have time, or you may want to spend that time adding some more functionality to your React app (e.g. recommending the next ladybug to look at in a side panel).
+
+### Node
+
+Using the file 'node/data/users.json' create a POST route that will return 'true' if there is a username and password pair in the request made from React.
+
+You can find a template for the React fetch request in 'src/components/Utils/Login/getUsers.js
+
+If you are feeling really adventerous you could even try and link this API call to the data you got from the ladybug JSON to only allow users on the list access to ladybugs that are 'locked'
+
+### CSS
+
+Show off your CSS skills and make your web app look nice :)
