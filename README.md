@@ -1,20 +1,23 @@
 ![image](https://i.natgeofe.com/k/47bb0144-f7d1-4a28-a102-834a590f6e57/ladybug-leaf_16x9.jpg)
 
+Feel free to use any resources at your disposal to complete this task, just make sure that the code is your own and you are able to explain it and any decisions you made throughout the process.
+
 # How to Run
 
 1.  If you haven't already, install Node.js from [Download NodeJS](https://nodejs.org/en/download/) (this project uses version 16.14.2)
 2.  Verify your installation in the terminal with the commands 'node --version' and 'npm -v' (version 16.14.2 or above should mostly be backwards compatible)
-3.  Clone the project locally
-4.  Open the folder in VSCode or alternative IDE
-5.  If using VSCode recommended extensions are ESLint, React Native Tools, DotENV
-6.  Normally .env files containing sensitive information would not be included in a public repository but in this case, it has been provided for you
-7.  Open the terminal (Ctrl+~) to toggle or (Ctrl+Shift+`) to open a new terminal
-8.  Make sure that you are in the directory containing the root of the project
-9.  Run the command (npm install) in your terminal
-10. While developing you can run the command (npm run dev) to start the node.js server and react client
-11. To stop these processes use the command (Ctrl+C)
-12. The web app can be found on (http://localhost:3000)
-13. Make sure to set up your project on GitHub and make regular commits, this is how you should submit [Create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+3.  You can click the 'Use this template' button at the top of the GitHub page to create your own version of this repository
+4.  Clone the project locally
+5.  Make sure to set up your project on GitHub and make regular commits
+6.  Open the folder in VSCode or alternative IDE
+7.  If using VSCode recommended extensions are ESLint, React Native Tools, DotENV
+8.  Normally .env files containing sensitive information would not be included in a public repository but in this case, it has been provided for you
+9.  Open the terminal (Ctrl+~) to toggle or (Ctrl+Shift+`) to open a new terminal
+10.  Make sure that you are in the directory containing the root of the project
+11.  Run the command (npm install) in your terminal
+12. While developing you can run the command (npm run dev) to start the node.js server and react client
+13. To stop these processes use the command (Ctrl+C)
+14. The web app can be found on (http://localhost:3000)
 
 # The Project
 
