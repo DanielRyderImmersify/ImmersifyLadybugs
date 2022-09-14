@@ -80,3 +80,5 @@ Show off your CSS skills and make your web app look nice :)
 To submit your final project you should send a link to your GitHub repository to DanielRyder@immersifyeducation.com.
 
 Please make sure that your repository is set to be viewed publically.
+
+You may also want to include any additional materials that will help you to explain your work, such as a photo of pseudo code or a plan you wrote down on paper.
