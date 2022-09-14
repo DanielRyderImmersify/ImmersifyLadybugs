@@ -37,7 +37,7 @@ In '/src/components/Landing/Landing.js' the 'GetLadybugs' function is called and
 
 The images specified by 'imageLocation' can be found in 'src/images'
 
-A good starting point would be to put this data into individual arrays (name, imageLocation and description)
+A good starting point would be to put this data into individual arrays (name, imageLocation and description) *hint* there may also be other ways of structuring the data depending on how it will be used in your JSX
 
 Using functional React (hooks) is preferred although you should complete the task however you feel most comfortable
 
