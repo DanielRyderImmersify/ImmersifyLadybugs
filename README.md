@@ -14,7 +14,7 @@
 10. While developing you can run the command (npm run dev) to start the node.js server and react client
 11. To stop these processes use the command (Ctrl+C)
 12. The web app can be found on (http://localhost:3000)
-13. Don't worry about building or deploying the web app, just remember to save your changes locally, this is what will be evaluated
+13. Make sure to set up your project on GitHub and make regular commits, this is how you should submit [Create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
 
 # The Project
 
@@ -70,3 +70,10 @@ If you are feeling adventurous you could even try and link this API call to the 
 ### CSS
 
 Show off your CSS skills and make your web app look nice :)
+
+
+# How to Submit
+
+To submit your final project you should send a link to your GitHub repository to DanielRyder@immersifyeducation.com.
+
+Please make sure that your repository is set to be viewed publically.
