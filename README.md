@@ -4,7 +4,7 @@ Feel free to use any resources at your disposal to complete this task, just make
 
 This project is a simple web app with a NodeJS backend, Express middleware and React frontend.
 
-Don't worry if you don't have experience in any of these technologies you only need to use Javascript to complete the main tasks, after that you may choose to attempt one of the optional tasks in an area of web development you are passionate about but it is not required.
+Don't worry if you don't have experience in any of these technologies you only need to use Javascript to complete the main tasks, after that you may choose to attempt one of the optional tasks in an area of web development you are passionate about but it is not required and will not count against you.
 
 # How to Run
 
