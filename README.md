@@ -26,7 +26,7 @@ Don't worry if you don't have experience in any of these technologies you only n
 
 # The Project
 
-This section may be useful for any optional features you choose to add after the main tasks but don't worry if you are not familiar with any of the technology or terms used.
+This section may be useful for any optional features you choose to add after the main tasks but don't worry if you are not familiar with any of the technology or terms used, you will be able to complete everything you need to with Javascript alone.
 
 ## NodeJS/Express
 
