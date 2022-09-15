@@ -2,11 +2,15 @@
 
 Feel free to use any resources at your disposal to complete this task, just make sure that the code is your own and you are able to explain it and any decisions you made throughout the process.
 
+This project is a simple web app with a NodeJS backend, Express middleware and React frontend.
+
+Don't worry if you don't have experience in any of these technologies you only need to use Javascript to complete the main tasks, after that you may choose to attempt one of the optional tasks in an area of web development you are passionate about but it is not required.
+
 # How to Run
 
 1.  If you haven't already, install Node.js from [Download NodeJS](https://nodejs.org/en/download/) (this project uses version 16.14.2)
-2.  Verify your installation in the terminal with the commands 'node --version' and 'npm -v' (version 16.14.2 or above should mostly be backwards compatible)
-3.  You can click the 'Use this template' button at the top of the GitHub page to create your own version of this repository
+2.  Verify your installation in the terminal with the commands 'node --version' and 'npm -v' (version 16.14.2 or above should mostly be backwards compatible
+3.  Once signed in to GitHub, you can click the 'Use this template' button at the top of the GitHub page to create your own version of this repository
 4.  Clone the project locally
 5.  Make sure to set up your project on GitHub and make regular commits
 6.  Open the folder in VSCode or alternative IDE
@@ -16,10 +20,13 @@ Feel free to use any resources at your disposal to complete this task, just make
 10. Make sure that you are in the directory containing the root of the project
 11. Run the command (npm install) in your terminal
 12. While developing you can run the command (npm run dev) to start the node.js server and react client
-13. To stop these processes use the command (Ctrl+C)
-14. The web app can be found on (http://localhost:3000)
+13. If you do not plan to use Node at any point you may prefer to use either the command (npm run client)
+14. To stop these processes use the command (Ctrl+C)
+15. The web app can be found on (http://localhost:3000)
 
 # The Project
+
+This section may be useful for any optional features you choose to add after the main tasks but don't worry if you are not familiar with any of the technology or terms used.
 
 ## NodeJS/Express
 
@@ -31,18 +38,15 @@ The route '/node/routes/getLadybugs.js' is called by the utility function '/src/
 
 ## React
 
-The frontend of this web app was made using 'create-react-app' with only a few additions
+The frontend of this web app was made using 'create-react-app' with a few small additions
 
-In '/src/components/Landing/Landing.js' the 'GetLadybugs' function is called and given two callback parameters
+In '/src/components/Landing/Landing.js' the 'GetLadybugs' function is called and given the following callback parameter
 
--   the first is a function to handle the ladybugs JSON (which has been parsed by 'GetLadybugs')
--   the second is an error handling function
+-   a function to handle the ladybugs JSON (which is given to you as a string)
 
-The images specified by 'imageLocation' can be found in 'src/images'
+The images specified by 'imageLocation' can be found in 'src/images' and can be accessed by importing 'src/images/index' as done in 'src/components/Landing/DisplayContent.js'
 
 A good starting point would be to put this data into individual arrays (name, imageLocation and description) _hint_ there may also be other ways of structuring the data depending on how it will be used in your JSX
-
-Using functional React (hooks) is preferred although you should complete the task however you feel most comfortable
 
 # Your Task
 
@@ -52,15 +56,48 @@ However you prefer to plan and execute this task is accepted, just make sure tha
 
 ## Create a simple web app that displays information about ladybugs
 
-Using the information supplied to you in the ladybugs JSON create a web app that has the following functionality
+### Data Manipulation
 
--   A landing page that shows all of the ladybugs names and images (can be formatted however you choose)
+You will find a function 'gotDataCallback' in the file 'src/components/Landing/Landing.js' which has the ladybugs JSON passed into it as a parameter
 
--   Each ladybug can be clicked on to show all of the information on its own page (preferrably without a page reload. _hint_ use hooks and components)
+*Parse the string data into a JSON object*
+
+*Destructure the JSON object into individual arrays for name, imageLocation and description*
+
+*Pass your arrays for name and imageLocation into the DisplayContent component*
+
+*Remember to make regular commits*
+
+### Rendering your Data
+
+Your data should now be contained within the 'names' and 'imageLocations' arrays in the file 'src/components/Landing/DisplayContent/DisplayContent.js'.
+
+The array 'outputJSX' is returned from this component, it is your task to populate it with JSX (similar to HTML) so the landing page can render it.
+
+You should be aware that the image locations you are given contain the suffix '.jpg' but the way you access the images uses only the initial part of the filename.  E.g. Your image locations array may contain the string 'Coccinella.jpg' but to access the image you will need to manipulate this string to become 'Coccinella'.
+
+*Populate the header (line 15) with the third item in the 'names' array*
+
+*Populate the image source (line 16) with the third item in the 'imageLocations' array, read through the instructions for this section again if your image is not displaying*
+
+*Remember to make regular commits*
+
+*Using a suitable technique, populate the 'outputJSX' array with the JSX (HTML) for every ladybug*
+
 
 ## Additional Tasks (optional)
 
 It is not necessarily expected for you to complete these tasks, perhaps just pick the one which interests you the most if you have time, or you may want to spend that time adding some more functionality to your React app (e.g. recommending the next ladybug to look at in a side panel).
+
+### Javascript
+
+*Put the initial ladybugs JSON into an array of objects with (a)' Ladybug' concatinated onto each name, (b)'.jpg.' replaced by '.png' for each imageLocation and (c)include the description.  Then output your object to the console.*
+
+If you are still looking for another Javascript task you can try writing your object to a new JSON file.
+
+### React
+
+*Each ladybug can be clicked on to show all of the information on its own page (preferrably without a page reload. _hint_ use hooks and components)*
 
 ### Node
 
