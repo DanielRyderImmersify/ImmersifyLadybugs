@@ -129,3 +129,5 @@ To submit your final project you should send a link to your GitHub repository to
 Please make sure that your repository is set to be viewed publically.
 
 You may also want to include any additional materials that will help you to explain your work, such as a photo of pseudo code or a plan you wrote down on paper.
+
+Any edits and commits made after your submission time will not be considered in your application.
