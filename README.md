@@ -72,28 +72,35 @@ You will find a function 'gotDataCallback' in the file 'src/components/Landing/L
 
 Your data should now be contained within the 'names' and 'imageLocations' arrays in the file 'src/components/Landing/DisplayContent/DisplayContent.js'.
 
-The array 'outputJSX' is returned from this component, it is your task to populate it with JSX (similar to HTML) so the landing page can render it.
+The array 'outputJSX' is returned from this component, it has been populated with JSX (similar to HTML) so the landing page can render it.
 
-You should be aware that the image locations you are given contain the suffix '.jpg' but the way you access the images uses only the initial part of the filename.  E.g. Your image locations array may contain the string 'Coccinella.jpg' but to access the image you will need to manipulate this string to become 'Coccinella'.
+You should be aware that the image locations you are given contain the suffix '.jpg' but the way you access the images uses only the initial part of the filename.
 
-- *Populate the header (line 15) with the third item in the 'names' array*
+1. *Populate the header (line 15) with the third item in the 'names' array*
 
-- *Populate the image source (line 16) with the third item in the 'imageLocations' array, read through the instructions for this section again if your image is not displaying*
+*Commit this part of the task*
 
-- *Remember to make regular commits*
+2. *Populate the image source (line 16) with the third item in the 'imageLocations' array, read through the instructions for this section again if your image is not displaying*
 
-- *Using a suitable technique, populate the 'outputJSX' array with the JSX (HTML) for every ladybug*
+*Commit this part of the task*
+
+
+### Final Task
+
+1. *Using a suitable technique, populate the 'outputJSX' array with the JSX (HTML) for every ladybug*
+
+*Commit this part of the task*
 
 
 ## Additional Tasks (optional)
 
-It is not necessarily expected for you to complete these tasks, perhaps just pick the one which interests you the most if you have time, or you may want to spend that time adding some more functionality to your React app (e.g. recommending the next ladybug to look at in a side panel).
+It is not necessarily expected for you to complete these tasks, perhaps just pick the one which interests you the most if you have time.
 
 ### Javascript
 
-Put the initial ladybugs JSON into an array of objects with (a)' Ladybug' concatinated onto each name, (b)'.jpg.' replaced by '.png' for each imageLocation and (c)include the description.  Then output your object to the console.
+Put the initial ladybugs JSON into a new array of objects with (a)' Ladybug' concatinated onto each name, (b)'.jpg.' replaced by '.png' for each imageLocation (your images will no longer render if you impleted this data) and (c)include the description.  Then output your object to the console.
 
-If you are still looking for another Javascript task you can try writing your object to a new JSON file.
+If you are still looking for another Javascript task you can try writing the object you have just created to a new JSON file.
 
 ### React
 
