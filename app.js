@@ -20,8 +20,9 @@ process.on("uncaughtException", function (error) {
 app.use('/getLadybugs', getLadybugs)
 
 
-app.post('/api/test', (req, res) => {
-    console.log(req.body)
+app.get('/api/test', (req, res) => {
+    console.log('api test')
+    res.send('success')
 })
 
 

@@ -1,6 +1,14 @@
 
-export function GetLadybugs (gotDataCallback, errorCallback) {
+import { noNodeData } from "./noNodeData";
 
+export function GetLadybugs (gotDataCallback) {
+
+    console.log('get ladybugs')
+
+    checkForServer(gotDataCallback)
+}
+
+function checkForServer (gotDataCallback) {
     var myHeaders = new Headers();
 
     var requestOptions = {
@@ -9,13 +17,36 @@ export function GetLadybugs (gotDataCallback, errorCallback) {
         redirect: "follow",
     };
 
-    fetch(process.env.REACT_APP_API_URL + "/getLadybugs", requestOptions)
+    fetch("http://localhost:3000/api/test", requestOptions)
         .then((response) => response.text())
         .then((result) => {
-            gotDataCallback(JSON.parse(result))
+            if (result !== "success") {
+                gotDataCallback(noNodeData)
+            }
+            else {
+                getLadybugs(gotDataCallback)
+            }
+        })
+        .catch(() => {
+            gotDataCallback(noNodeData());
+        });
+}
+
+function getLadybugs (gotDataCallback) {
+    var myHeaders = new Headers();
+
+    var requestOptions = {
+        method: "GET",
+        headers: myHeaders,
+        redirect: "follow",
+    };
+
+    fetch("http://localhost:3000/getLadybugs", requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+            gotDataCallback(result);
         })
         .catch((error) => {
-            console.log("error", error)
-            errorCallback(error)
+            console.log(error);
         });
 }
