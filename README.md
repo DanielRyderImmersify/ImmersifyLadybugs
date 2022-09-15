@@ -108,6 +108,8 @@ Implement the following functionality to your web app
 
 - Each ladybug can be clicked on to show all of the information on its own page (preferrably without a page reload. _hint_ use hooks and components)
 
+- Fix the warning 'Each child in a list should have a unique "key' prop" that you get in the console
+
 ### Node
 
 Using the file 'node/data/users.json' create a POST route that will return 'true' if there is a username and password pair in the request made from React.
