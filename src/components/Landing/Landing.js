@@ -5,14 +5,10 @@ import { DisplayContent } from './DisplayContent/DisplayContent'
 
 export const Landing = () => {
 
-    GetLadybugs(gotDataCallback, errorCallback)
+    GetLadybugs(gotDataCallback)
 
     function gotDataCallback (data) {
-        console.log(data)
-    }
-
-    function errorCallback (error) {
-        console.log(error)
+        //console.log(data)
     }
 
     return (
@@ -22,9 +18,9 @@ export const Landing = () => {
             <DisplayContent
                 names={["Ladybug1", "Ladybug2", "Ladybug3"]}
                 imageLocations={[
-                    "Coccinella",
-                    "ConvergentLadyBeetle",
-                    "FourteenSpottedLadybug",
+                    "Coccinella.jpg",
+                    "image2.jpg",
+                    "image3.jpg",
                 ]}
             />
         </>
