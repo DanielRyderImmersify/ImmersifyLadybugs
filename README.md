@@ -20,7 +20,7 @@ Don't worry if you don't have experience in any of these technologies you only n
 10. Make sure that you are in the directory containing the root of the project
 11. Run the command (npm install) in your terminal
 12. While developing you can run the command (npm run dev) to start the node.js server and react client
-13. If you do not plan to use Node at any point you may prefer to use either the command (npm run client)
+13. If you do not plan to use Node at any point you may prefer to use the command (npm run client)
 14. To stop these processes use the command (Ctrl+C)
 15. The web app can be found on (http://localhost:3000)
 
